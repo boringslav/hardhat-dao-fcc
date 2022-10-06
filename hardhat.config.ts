@@ -1,11 +1,13 @@
-require("@nomiclabs/hardhat-waffle")
-require("@nomiclabs/hardhat-etherscan")
-require("hardhat-deploy")
-require("solidity-coverage")
-require("hardhat-gas-reporter")
-require("hardhat-contract-sizer")
-require("@appliedblockchain/chainlink-plugins-fund-link")
-require("dotenv").config()
+import "@nomiclabs/hardhat-waffle"
+import "@nomiclabs/hardhat-etherscan"
+import "hardhat-deploy"
+import "solidity-coverage"
+import "hardhat-gas-reporter"
+import "hardhat-contract-sizer"
+import "@appliedblockchain/chainlink-plugins-fund-link"
+import "dotenv"
+import "@nomiclabs/hardhat-ethers"
+import "@typechain/hardhat"
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -43,7 +45,7 @@ module.exports = {
             gas: 6000000,
         },
         rinkeby: {
-            url: RINKEBY_RPC_URL,
+            url: `${RINKEBY_RPC_URL}`,
             accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
             saveDeployments: true,
             chainId: 4,
