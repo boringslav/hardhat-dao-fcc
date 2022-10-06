@@ -2,10 +2,12 @@ import { HardhatRuntimeEnvironment } from "hardhat/types/runtime"
 import { DeployFunction } from "hardhat-deploy/types"
 import { networkConfig, developmentChains } from "../helper-hardhat-config"
 import verify from "../utils/verify"
+//@ts-ignore
 import { ethers } from "hardhat"
-
 const deployGovernanceToken: DeployFunction = async ({
+    //@ts-ignore
     getNamedAccounts,
+    //@ts-ignore
     deployments,
     network,
 }: HardhatRuntimeEnvironment) => {
