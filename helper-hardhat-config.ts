@@ -1,4 +1,4 @@
-const networkConfig = {
+export const networkConfig = {
     default: {
         name: "hardhat",
         fee: "100000000000000000",
@@ -38,13 +38,6 @@ const networkConfig = {
     },
 }
 
-const DECIMALS = "18"
-const INITIAL_PRICE = "200000000000000000000"
-const developmentChains = ["hardhat", "localhost"]
-
-module.exports = {
-    networkConfig,
-    developmentChains,
-    DECIMALS,
-    INITIAL_PRICE,
-}
+export const DECIMALS = "18"
+export const INITIAL_PRICE = "200000000000000000000"
+export const developmentChains = ["hardhat", "localhost"]
