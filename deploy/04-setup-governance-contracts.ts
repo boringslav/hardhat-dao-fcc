@@ -11,10 +11,10 @@ const setupContracts: DeployFunction = async () => {
     const { deploy, log, get } = deployments
     const { deployer } = await getNamedAccounts()
     const timeLock = await ethers.getContract("TimeLock", deployer)
-    const governor = await ethers.getCOntract("GovernorContract", deployer)
+    const governor = await ethers.getContract("GovernorContract", deployer)
 
     log("Setting up roles...")
-    const proposerRole = await timeLock.PROPOSAL_ROLE()
+    const proposerRole = await timeLock.PROPOSER_ROLE()
     const executorRole = await timeLock.EXECUTOR_ROLE()
     const adminRole = await timeLock.TIMELOCK_ADMIN_ROLE()
 
