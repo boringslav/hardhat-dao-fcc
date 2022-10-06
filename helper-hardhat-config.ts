@@ -41,4 +41,7 @@ export const networkConfig = {
 export const DECIMALS = "18"
 export const INITIAL_PRICE = "200000000000000000000"
 export const MIN_DELAY = 3600
+export const VOTING_PERIOD = 5
+export const VOTING_DELAY = 1
+export const QUORUM_PERCENTAGE = 4
 export const developmentChains = ["hardhat", "localhost"]
