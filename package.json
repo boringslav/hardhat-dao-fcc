@@ -48,7 +48,8 @@
     "@openzeppelin/contracts": "^4.7.3",
     "@remix-project/remixd": "^0.6.6",
     "babel-eslint": "^10.1.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security"
   },
   "mocha": {
     "timeout": 10000000
